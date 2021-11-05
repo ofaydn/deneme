@@ -1,2 +1,3 @@
-#this is a read me file
-thanks for reading me
+# deneme
+first tryings in repository
+i want to know
