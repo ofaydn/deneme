@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int totalx;
 int totaly;
 int finalArea;
