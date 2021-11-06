@@ -49,4 +49,5 @@ intmain (){
       finalArea = 4;
       print ();
   }
+  return 0;
 }
