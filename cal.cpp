@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
-int x[2];
-int y[2];
-int area[2];
+int x[100];
+int y[100];
+int area[100];
 int totalx;
 int totaly;
 int finalArea;
@@ -11,7 +11,7 @@ void print () {
   cout << "The composed vector is on " << finalArea <<
     ". area with those axis projections: " << "(" << totalx << "," << totaly<< ").";
 }
-intmain (){
+int main (){
     cout<<"Please enter vector number: ";
     cin>>vectorNumber;
   for (int c = 0; c < vectorNumber; c++){
