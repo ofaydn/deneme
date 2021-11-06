@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
-int totalx;
-int totaly;
+int finalx;
+int finaly;
 int finalArea;
 int vectorNumber;
 void print () {
   cout << "The composed vector is on " << finalArea <<
-    ". area with those axis projections: " << "(" << totalx << "," << totaly<< ").";
+    ". area with those axis projections: " << "(" << finalx << "," << finaly<< ").";
 }
 int main (){
     cout<<"Please enter vector number: ";
@@ -29,19 +29,21 @@ int main (){
 	  y[i] = -y[i];
       }
   }
-  totalx = x[0] + x[1];
-  totaly = y[0] + y[1];
-  if ((totalx or totaly) == 0){
+  for(int a = 0;a<vectorNumber;a++){
+      finalx+=x[a];
+      finaly+=y[a];
+  }
+  if ((finalx or finaly) == 0){
       cout << "This vector has no area";}
-  else if (totalx > 0 and totaly > 0){
+  else if (finalx > 0 and finaly > 0){
       finalArea = 1;
       print ();
   }
-  else if (totalx < 0 and totaly > 0){
+  else if (finalx < 0 and finaly > 0){
       finalArea = 2;
       print ();
   }
-  else if (totalx < 0 and totaly < 0){
+  else if (finalx < 0 and finaly < 0){
       finalArea = 3;
       print ();
   }
