@@ -6,21 +6,22 @@ int area[2];
 int totalx;
 int totaly;
 int finalArea;
-void
-print ()
-{
+int vectorNumber;
+void print () {
   cout << "The composed vector is on " << finalArea <<
     ". area with those axis projections: " << "(" << totalx << "," << totaly<< ").";
 }
 intmain (){
-  for (int c = 0; c < 2; c++){
+    cout<<"Please enter vector number: ";
+    cin>>vectorNumber;
+  for (int c = 0; c < vectorNumber; c++){
       cout << "Please enter x: ";
       cin >> x[c];
       cout << "Please enter y: ";
       cin >> y[c];
       cout << "Please enter area: ";
       cin >> area[c];}
-  for (int i = 0; i < 2; i++){
+  for (int i = 0; i < vectorNumber; i++){
       if (area[i] == (2 or 3)){
 	  x[i] = -x[i];
       }
