@@ -1,8 +1,6 @@
 #include <iostream>
 using namespace std;
-int x[100];
-int y[100];
-int area[100];
+
 int totalx;
 int totaly;
 int finalArea;
@@ -14,6 +12,9 @@ void print () {
 int main (){
     cout<<"Please enter vector number: ";
     cin>>vectorNumber;
+    int x[vectorNumber];
+    int y[vectorNumber];
+    int area[vectorNumber];
   for (int c = 0; c < vectorNumber; c++){
       cout << "Please enter x: ";
       cin >> x[c];
