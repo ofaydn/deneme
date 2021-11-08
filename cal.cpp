@@ -33,7 +33,7 @@ int main (){
       finalx+=x[a];
       finaly+=y[a];
   }
-  if ((finalx or finaly) == 0){
+  if ((finalx || finaly) == 0){
       cout << "This vector has no area";}
   else if (finalx > 0 and finaly > 0){
       finalArea = 1;
