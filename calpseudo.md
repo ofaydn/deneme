@@ -1,5 +1,8 @@
 Start
 Get Vector Number
+Define x list
+Define y list
+Define area list
     Get X's
     Get Y's
     Get Area numbers
